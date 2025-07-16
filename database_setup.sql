@@ -1,8 +1,6 @@
--- Create database and table for user management system
 CREATE DATABASE IF NOT EXISTS user_management;
 USE user_management;
 
--- Create users table with specified fields
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,

@@ -92,7 +92,7 @@ $users_result = $conn->query($users_query);
                 </div>
                 <div class="col-md-6 text-end">
                     <a href="admin.php" class="btn btn-light me-2">
-                        <i class="fas fa-arrow-left"></i> Back to Admin
+                        <i class="fas fa-arrow-left"></i> Back
                     </a>
                     <a href="logout.php" class="btn btn-outline-light">
                         <i class="fas fa-sign-out-alt"></i> Logout
@@ -257,33 +257,13 @@ $users_result = $conn->query($users_query);
         </div>
     </div>
 
-    <!-- User Details Modal -->
-    <div class="modal fade" id="userModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">User Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body" id="userModalBody">
-                    <!-- User details will be loaded here -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function viewUser(userId) {
-            // In a real application, you would fetch user details via AJAX
             alert('View user details for ID: ' + userId + '\n\nThis would open a detailed view in a real application.');
         }
 
         function editUser(userId) {
-            // In a real application, you would redirect to an edit form
             alert('Edit user with ID: ' + userId + '\n\nThis would redirect to an edit form in a real application.');
         }
 
